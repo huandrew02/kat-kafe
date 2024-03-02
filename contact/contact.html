@@ -34,13 +34,38 @@
 </div>
 
 <main>
-    <!-- Content of the contact -->
+    <h1>Contact Us</h1>
+    <div class="contact-form-container">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" >
+            <input type="hidden" name="access_key" value="6f0ba577-b582-4fa8-a202-21f74cf3f15d">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
 </main>
 
 <footer>
     <!-- Footer content -->
 </footer>
-
 <script src="contact_script.js"></script>
 </body>
 </html>
