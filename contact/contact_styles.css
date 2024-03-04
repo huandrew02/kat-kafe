@@ -77,29 +77,29 @@ header {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-  }
-  
-  /* The side panel links */
-  .sidepanel a {
+}
+
+/* The side panel links */
+.sidepanel a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 25px;
     color: white;
     display: block;
     transition: 0.3s;
-  }
-  
-  /* The close button */
-  .closebtn {
+}
+
+/* The close button */
+.closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  
-  /* Style the button that opens the sidepanel */
-  .openbtn {
+}
+
+/* Style the button that opens the sidepanel */
+.openbtn {
     display: none;
     font-size: 30px;
     cursor: pointer;
@@ -110,13 +110,13 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  
-  .openbtn:hover {
+}
+
+
+.openbtn:hover {
     background-color: #444;
-  }
-  
+}
+
 
 /* smaller screens */
 @media (max-width: 480px) {

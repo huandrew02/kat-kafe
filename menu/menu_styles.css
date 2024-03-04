@@ -77,29 +77,29 @@ header {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-  }
+}
   
-  /* The side panel links */
-  .sidepanel a {
+/* The side panel links */
+.sidepanel a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 25px;
     color: white;
     display: block;
     transition: 0.3s;
-  }
+}
   
-  /* The close button */
-  .closebtn {
+/* The close button */
+.closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  
-  /* Style the button that opens the sidepanel */
-  .openbtn {
+}
+
+/* Style the button that opens the sidepanel */
+.openbtn {
     display: none;
     font-size: 30px;
     cursor: pointer;
@@ -110,12 +110,12 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  
-  .openbtn:hover {
+}
+
+
+.openbtn:hover {
     background-color: #444;
-  }
+}
   
 
 /* smaller screens */
@@ -133,3 +133,73 @@ header {
     }
 }
 
+/*-----------------------------------Menu-------------------------------*/
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu-section {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+.menu-section caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.menu-section th,
+.menu-section td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.menu-section th {
+    background-color: #f2f2f2;
+}
+
+.menu-section tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.menu-image {
+    width: 100px;
+    height: auto;
+    border-radius: 5px; 
+}
+
+.menu-image {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.menu-section td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/*gif/animations*/
+.cat-gif {
+    width: 100px;
+    position: absolute;
+    left: 10%;
+    transform: translateY(-45%); 
+}
+
+.boba-cat-gif {
+    width: 100px;
+    position: absolute;
+    right: 100px;
+    transform: translateY(-45%); 
+}
+
+.table-with-cat {
+    position: relative; /
+}
