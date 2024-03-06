@@ -163,8 +163,8 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
     padding: 30px;
     position: relative;
     overflow: hidden;
-    min-height: 10vh; /* Changed to min-height to ensure it doesn't get too small */
-    height: auto; /* This will allow the container to grow with content if necessary */
+    min-height: 10vh;
+    height: auto;
 }
 
 /*------------------------CTA Text 1-----------------------*/
@@ -175,11 +175,11 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
     margin-left: auto;
     color: white; /* change color if needed */
     position: absolute;
-    right: -40px; /* Adjusted from -50px to 30px */
+    right: -40px;
     top: 50%;
-    transform: translateY(-50%); /* Centers the element vertically */
-    min-width: 60%; /* Minimum width so it doesn't get too small */
-    max-width: 70%; /* Maximum width as a percentage of the parent container */
+    transform: translateY(-50%);
+    min-width: 60%;
+    max-width: 70%;
     height: 15vh;
 }
 
@@ -201,7 +201,7 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
 
 
 .call-to-action p {
-    padding-top: 50px;
+    padding-top: 47px;
     margin: 0;
     font-size: 1.2em;
 }
@@ -304,15 +304,13 @@ footer input[type=submit] {
     cursor: pointer;
 }
 
-/* Optional: Add hover effect for button */
 footer input[type=submit]:hover {
     background: #555;
 }
 
-/* Styles for Hours of Operation */
 .hours p {
-    margin: 0; /* Removes default paragraph margins */
-    line-height: 1.5; /* Adds space between lines */
+    margin: 0;
+    line-height: 1.5;
 }
 
 /* Media query for smaller screens */
@@ -323,7 +321,7 @@ footer input[type=submit]:hover {
     }
 
     .newsletter, .hours {
-        width: 100%; /* Full width on small screens */
+        width: 100%;
     }
 }
 
