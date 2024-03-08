@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     font-family: 'Arial', sans-serif;
     height: 100vh;
+    background-color: #333; /*can remove if needed*/
 }
 
 header {
