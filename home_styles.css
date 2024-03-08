@@ -47,22 +47,6 @@ header {
     color: #555; 
 }
 
-.nav-toggle {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: none;
-    border: none;
-    color: #333; 
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.nav-toggle .fas {
-    display: block;
-}
-
 .nav-links.active {
     display: block; 
 }
@@ -149,7 +133,7 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
     background-repeat: no-repeat;
     background-size: cover;
 
-  }
+}
 .hero-text {
   text-align: center;
   color: white; /* change color if needed */
