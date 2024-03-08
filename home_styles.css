@@ -112,7 +112,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    }
+}
 
 
 .openbtn:hover {
@@ -121,7 +121,7 @@ header {
   
 
 /* smaller screens */
-@media (max-width: 480px) {
+@media (max-width: 570px) {
     .openbtn {
         display: block;
     }
@@ -293,7 +293,7 @@ footer form {
     gap: 10px;
 }
 
-footer input[type=email], footer input[type=submit] {
+footer input[type=email], footer input[type=text], footer input[type=submit] {
     padding: 10px;
     border: none;
     border-radius: 5px;
