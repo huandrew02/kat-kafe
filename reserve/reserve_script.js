@@ -28,8 +28,8 @@ function addBookingButtonListeners(buttons, bookingType) {
 }
 
 // Add listeners to booking buttons
-addBookingButtonListeners(document.getElementsByClassName('regular-visit-btn'), 'Regular visit');
-addBookingButtonListeners(document.getElementsByClassName('kids-hour-btn'), 'Kids hour');
+addBookingButtonListeners(document.getElementsByClassName('regular-visit-btn'), 'Regular Visit');
+addBookingButtonListeners(document.getElementsByClassName('private-visit-btn'), 'Private Visit');
 
 // Close button and outside click listener
 close.addEventListener('click', () => toggleModal('none'));
