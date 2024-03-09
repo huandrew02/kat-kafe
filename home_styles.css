@@ -118,6 +118,11 @@ header {
         display: none; 
     }
 }
+.top-logo img{
+    height:10%;
+    width:10%;
+    
+}
 
 /****************************************************************************
 START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
