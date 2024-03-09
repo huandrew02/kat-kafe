@@ -133,3 +133,166 @@ header {
     }
 }
 
+
+
+/*===================================*/
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/reserve_hero.jpg");
+  
+    /* Set a specific height */
+    height: 50vh;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.hero-text {
+  text-align: center;
+  color: white; /* change color if needed */
+  transform: translateY(170px);
+  text-transform:uppercase;
+}
+
+/* Information Section Styles */
+.info-section {
+    padding: 20px;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.reservation-info {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.reservation-info p {
+    margin-bottom: 15px;
+}
+
+.reservation-info a{
+    text-decoration: none;
+}
+
+
+/* Booking Section Styles */
+.booking-section {
+    background: #f9f9f9; 
+    padding: 40px 0; 
+}
+
+.booking-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px; 
+    padding: 0 15px; 
+}
+
+.booking-card {
+    background: #ffffff; 
+    border: 1px solid #dddddd; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.booking-card h2 {
+    color: #333333; 
+    margin-bottom: 15px; 
+}
+
+.booking-card button.booking-button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    margin-top: 20px; 
+    display: block; 
+    width: 100%;
+}
+
+.booking-card button.booking-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin:3% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add styles for form inputs, labels, etc. */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"]{
+    width: 96%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
