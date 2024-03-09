@@ -153,10 +153,29 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
     height: auto;
 }
 
+/*------------------------Justify CTA-1 right side-----------------------*/
+
+.justify-call-to-action-1{
+
+    justify-content: flex-end;
+
+}
+
+/*---------------------CTA Containter + hover feature ----------*/
+
+.container-cta-text{
+    position: relative;
+    width:80%;
+    transition: width 1s;
+}
+
+.container-cta-text:hover {
+    width: 100%;
+}
 /*------------------------CTA Text 1-----------------------*/
 .cta-text-1 {
     background: #A9A9A9; /* change color if needed */
-    border-radius: 50px;
+    border-radius: 70px 0px 0px 70px;
     padding: 20px 60px;
     margin-left: auto;
     color: white; /* change color if needed */
@@ -172,9 +191,10 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
 /*------------------------CTA Text 2-----------------------*/
 .cta-text-2 {
     background: #A9A9A9; /* change color if needed */
-    border-radius: 50px;
+    border-radius:  0px 70px 70px 0px;
     padding: 20px 60px;
     margin-left: auto;
+    text-align:right;
     color: white; /* change color if needed */
     position: absolute;
     left: -40px;
@@ -183,6 +203,12 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
     min-width: 60%;
     max-width: 70%; 
     height: 15vh;
+}
+
+/*------------------------Justify CTA-2 left side-----------------------------*/
+
+.justify-call-to-action-2{
+    justify-content: flex-start;
 }
 
 
