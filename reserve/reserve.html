@@ -40,6 +40,90 @@
 
 <main>
     <!-- Content of the homepage -->
+    <!-- Hero Section -->
+    <section class="hero-image">
+        <div class="hero-text">
+            <h1>We are Open. Come visit us!</h1>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section class="info-section">
+        <div class="reservation-info">
+            <p>Admission is by reservation only. Those arriving without tickets will be instructed to go online and reserve their tickets.</p>
+            <p>Some activities and ages are restricted to specific time slots so please review our options before booking.</p>
+            <p>For more details about visiting the café and reservations, please visit our <a href="../faq/faq.html">FAQ page</a>.</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <!-- Regular Visit Booking Option -->
+            <div class="booking-card">
+                <h2>Regular visit (Adults & Kids 9+)</h2>
+                <p>You are making a reservation to spend 50 minutes in the company of our adoptable cats! Please remove your shoes and sanitize your hands when you enter the space. </p>
+                <p>Masks are recommended, but not required.</p>
+
+                <p><u>AGE RESTRICTIONS:</u> <b>The minimum age for visiting during regular hours is 9 years old.</b> Guests ages 9-17 must come with a chaperone over 18. There must be at least one adult present. Families visiting with a child under 9 years old can visit during children's hours.</p>
+                <p><u>CHANGES/CANCELLATIONS:</u> You can alter your reservation date/time by giving us a call. You can cancel your reservation up to 48 hours in advance for a full refund and 24 hours for a 50% refund. </p>
+                <p><u>MAXIMUM GROUP SIZE:</u> <b>The maximum number of people per visit is 5.</b></p>
+                <button class="regular-visit-btn">RESERVE</button>
+            </div>
+            <!-- Kids Hour Booking Option -->
+            <div class="booking-card">
+                <h2>Private Visits(Adults & Kids 9+)</h2>
+                <p>You are making a reservation to spend 50 minutes in the company of our adoptable cats! Please remove your shoes and sanitize your hands when you enter the space. </p>
+                <p>Masks are recommended, but not required.</p>
+
+                <p><u>CHANGES/CANCELLATIONS:</u> You can alter your reservation date/time by giving us a call. You can cancel your reservation up to 48 hours in advance for a full refund and 24 hours for a 50% refund. </p>
+                <p><u>MAXIMUM GROUP SIZE:</u> <b>The maximum number of people per visit is 5.</b></p>
+                <button class="private-visit-btn">RESERVE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Visit</h2>
+            <form id="bookingForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6f0ba577-b582-4fa8-a202-21f74cf3f15d">
+
+                <input type="hidden" id="bookingType" name="bookingType" value="">
+
+                <label for="adults">Number of Adults:</label>
+                <select id="adults" name="adults" required>
+                    <option value="">Select...</option>
+                    <!-- Options will be added by JavaScript -->
+                </select>
+                
+                <label for="children">Number of Children:</label>
+                <select id="children" name="children" required>
+                    <option value="">Select...</option>
+                    <!-- Options will be added by JavaScript -->
+                </select>
+
+                <label for="date">Choose a date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Choose a time:</label>
+                <select id="time" name="time" required>
+                    <!-- Times will be populated by JavaScript -->
+                </select>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">RESERVE NOW</button>
+            </form>
+        </div>
+    </div>
 </main>
 
 <footer>
