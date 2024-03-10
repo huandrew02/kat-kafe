@@ -178,20 +178,25 @@ footer form {
     gap: 10px;
 }
 
-footer input[type=email], footer input[type=text], footer input[type=submit] {
+footer input[type=email], footer input[type=text]{
     padding: 10px;
     border: none;
     border-radius: 5px;
     width: 95%;
 }
 
-footer input[type=submit] {
+
+footer button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
     background: #444; /* Darker background for the submit button */
     color: white;
     cursor: pointer;
 }
 
-footer input[type=submit]:hover {
+footer button:hover {
     background: #555;
 }
 

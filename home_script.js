@@ -23,3 +23,9 @@ function removeActiveClasses() {
   })
 }
 // TODO: make the newsletter work
+
+document.getElementById('subscribeButton').addEventListener('click', function(event) {
+  var audio = document.getElementById('subscribeAudio');
+  audio.play();
+  // You can add further actions here if needed
+});
