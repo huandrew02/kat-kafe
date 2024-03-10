@@ -6,6 +6,11 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
+/*
+  THIS SECTION HANDLE THE UP AND DOWN BUTTONS OF THE MENU
+*/
+
+
 const menuContainer = document.querySelector('.menu-container')
 const itemTypeTab = document.querySelector('.item-type-tab')
 const menuList = document.querySelector('.menulist')
@@ -19,7 +24,7 @@ const itemType = itemTypeTab.querySelectorAll('div')
 let activeSlideIndex = 0;
 
 itemType[activeSlideIndex].style.color = `black`;
-itemType[activeSlideIndex].getElementsByTagName('h2')[0].style.fontSize = `30px`
+itemType[activeSlideIndex].getElementsByTagName('h2')[0].style.fontSize = `2em`
 
 upButton.addEventListener('click', ()=> changeMenuList('up'))
 downButton.addEventListener('click', ()=> changeMenuList('down'))
@@ -27,7 +32,7 @@ downButton.addEventListener('click', ()=> changeMenuList('down'))
 const changeMenuList = (direction) =>{
   const containerHeight = menuContainer.clientHeight
   itemType[activeSlideIndex].style.color = `gray`;
-  itemType[activeSlideIndex].getElementsByTagName('h2')[0].style.fontSize = `25px`
+  itemType[activeSlideIndex].getElementsByTagName('h2')[0].style.fontSize = `1.5em`
   if (direction==='down'){
     activeSlideIndex++;
     if (activeSlideIndex>slideLength-1){
@@ -44,7 +49,7 @@ const changeMenuList = (direction) =>{
     console.log(itemType)
   }
   itemType[activeSlideIndex].style.color = `black`;
-  itemType[activeSlideIndex].getElementsByTagName('h2')[0].style.fontSize = `30px`
+  itemType[activeSlideIndex].getElementsByTagName('h2')[0].style.fontSize = `2em`
   menuList.style.transform = `translateY(-${activeSlideIndex*containerHeight}px)`
 
 }

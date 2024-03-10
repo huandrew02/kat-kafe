@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Ojuju','Arial', sans-serif;
     height: 100vh;
     background-color: #333; /*can remove if needed*/
 }
@@ -131,7 +133,7 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero.jpg");
   
     /* Set a specific height */
-    height: 50vh;
+    height: 60vh;
   
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -148,8 +150,6 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
 
 .call-to-action {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     background: #D3D3D3; /* change color if needed */
     padding: 30px;
     position: relative;
@@ -158,12 +158,13 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
     height: auto;
 }
 
-/*------------------------Justify CTA-1 right side-----------------------*/
+/*------------------------Justify CTA text-----------------------*/
 
 .justify-call-to-action-1{
-
     justify-content: flex-end;
-
+}
+.justify-call-to-action-2{
+    justify-content: flex-start;
 }
 
 /*---------------------CTA Containter + hover feature ----------*/
@@ -177,55 +178,51 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
 .container-cta-text:hover {
     width: 100%;
 }
-/*------------------------CTA Text 1-----------------------*/
+/*------------------------CTA Text 1 and 2-----------------------*/
 .cta-text-1 {
-    background: #A9A9A9; /* change color if needed */
     border-radius: 70px 0px 0px 70px;
+    right: -40px;
+    text-align:left;
+}/*diffrences in cta-text*/
+
+
+.cta-text-2 {
+    border-radius:  0px 70px 70px 0px;
+    left: -40px;
+    text-align:right;
+}/*diffrences in cta-text*/
+
+/*Overall same cta-text-structure*/
+.cta-text-1, .cta-text-2 {
+    /* change colors if needed */
+    background-color: #A9A9A9;
+    color: white; 
+
     padding: 20px 60px;
     margin-left: auto;
-    color: white; /* change color if needed */
+
+    
     position: absolute;
-    right: -40px;
     top: 50%;
+
     transform: translateY(-50%);
     min-width: 60%;
     max-width: 70%;
+
+    /*VERTICAL-CENTER THE TEXT IN DIV*/
     height: 15vh;
-}
-
-/*------------------------CTA Text 2-----------------------*/
-.cta-text-2 {
-    background: #A9A9A9; /* change color if needed */
-    border-radius:  0px 70px 70px 0px;
-    padding: 20px 60px;
-    margin-left: auto;
-    text-align:right;
-    color: white; /* change color if needed */
-    position: absolute;
-    left: -40px;
-    top: 50%;
-    transform: translateY(-50%);
-    min-width: 60%;
-    max-width: 70%; 
-    height: 15vh;
-}
-
-/*------------------------Justify CTA-2 left side-----------------------------*/
-
-.justify-call-to-action-2{
-    justify-content: flex-start;
-}
-
-
-.call-to-action p {
-    padding-top: 47px;
+    vertical-align: middle;
+    line-height: 15vh;
+    /*Text size and such*/
     margin: 0;
     font-size: 1.2em;
 }
+/*CTA Text end*/
+/*------------------------change a-----------------------*/
 
 .call-to-action a {
     text-decoration: none; 
-    font-weight: bold;
+
     color: #FFFFFF; /* change color if needed */
 }
 

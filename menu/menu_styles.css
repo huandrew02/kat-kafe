@@ -3,8 +3,9 @@
     this page lays reference to UDEMY PROJECT 26 DOUBLE VERTICAL SLIDER
     it is a variation on the slider done in the videos
     the left slide only transforms the color to indicate which
-    menu item type is done
+    menu item type is selected
 */
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
 
 *{
     margin:0;
@@ -15,7 +16,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Ojuju', 'Arial', sans-serif;
     height:100vh;
 }
 
@@ -185,7 +186,7 @@ header {
 }
 
 h2{
-    font-size: 25px;
+    font-size: 1.5em;
     transition: font-size .5s;;
 }
 /*------------MENU LIST CSS------------*/
@@ -211,30 +212,41 @@ h3{
     height: 5%;
     width: 95%;
     background-color: gray;
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
 }/*menulist title*/
 
 .menucontent > section{
-    padding: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
     height: 90%;
-    font-size: 12px;
-    text-align: left;
 }
+.menucontent p {
+    padding-left: 5%;
+    padding-top: 2.5%;
+}
+.menucontent p + section {
+    padding-top: 2.5%;
+} /*for milk substitute message*/
+
 /* container to organize menu items*/
 .list-container{
     display: flex;
-    justify-content:stretch;
 }
 .list-container > div{
+    font-style: normal;
     padding-right: 10%;
+    justify-content: center;
 }
 
 dd{
     font-style: italic;
+    font-size: small
 }
-dt{
-    font-style:normal;
+dt, dd>dt{
+    font-style: normal;
+    font-family: 'Arial',sans-serif;
+    font-size: calc(x-small+ xx-small);
 }
 
 
