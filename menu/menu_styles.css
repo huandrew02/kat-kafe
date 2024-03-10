@@ -1,7 +1,22 @@
+
+/* NOTES
+    this page lays reference to UDEMY PROJECT 26 DOUBLE VERTICAL SLIDER
+    it is a variation on the slider done in the videos
+    the left slide only transforms the color to indicate which
+    menu item type is done
+*/
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    height:100vh;
 }
 
 header {
@@ -39,7 +54,6 @@ header {
 .nav-links a.active {
     font-weight: bold;
 }
-
 
 .nav-links a:hover {
     color: #555; 
@@ -131,5 +145,131 @@ header {
     .nav-links {
         display: none; 
     }
+}
+
+/*------------BODY MENU PAGE STARTS HERE------------*/
+
+
+
+/*------------create enviroment for menu container------------*/
+
+.menu-container{
+    position: relative;
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90vw;
+    height: 90vh;
+}
+
+/*------------css for the left tabs------------*/
+
+.item-type-tab{
+    height:100%;
+    width:20%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #afafaf;
+    
+}
+.item-type-tab>div, .item-type-tab>section{
+    color:gray;
+    height: 14%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: color .5s 
+}
+
+h2{
+    font-size: 25px;
+    transition: font-size .5s;;
+}
+/*------------MENU LIST CSS------------*/
+
+.menulist{
+    height:100%;
+    position: absolute;
+    top:0%;
+    left:20%;
+    width:80%;
+    transition: transform 1s;
+}
+
+.menucontent {
+    height:100%;
+    width:100%;
+}
+/*------------title of the menulist------------*/
+h3{
+    padding-top:2.5%;
+    padding-bottom:2.5%;
+    padding-left:5%;
+    height: 5%;
+    width: 95%;
+    background-color: gray;
+    font-size: 30px;
+    text-align: center;
+}/*menulist title*/
+
+.menucontent > section{
+    padding: 5%;
+    height: 90%;
+    font-size: 12px;
+    text-align: left;
+}
+/* container to organize menu items*/
+.list-container{
+    display: flex;
+    justify-content:stretch;
+}
+.list-container > div{
+    padding-right: 10%;
+}
+
+dd{
+    font-style: italic;
+}
+dt{
+    font-style:normal;
+}
+
+
+
+
+/*------------BUTTONS css------------*/
+button{
+    background-color: white;
+    border: none;
+    color:#787878;
+    cursor: pointer;
+    font-size: 16px;
+    padding:15px;
+}
+
+button:hover{
+    color:#404040
+}
+
+button:focus{
+    outline: none;
+}
+
+.menu-container .action-button button {
+    position: absolute;
+    left:18%;
+    top:45%;
+    z-index:100;
+}
+
+.menu-container .action-button .down-button{
+    transform: translateX(-100%);
+}
+
+.menu-container .action-button .down-button{
+    transform: translateY(100%);
 }
 
