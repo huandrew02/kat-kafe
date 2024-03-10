@@ -5,154 +5,21 @@
     the left slide only transforms the color to indicate which
     menu item type is selected
 */
-@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
 
-*{
-    margin:0;
-    padding: 0;
-}
-
-
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Ojuju', 'Arial', sans-serif;
-    height:100vh;
-}
-
-header {
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.business-name h1 {
-    margin: 0;
-    padding: 20px 0;
-}
-
-.navbar {
-    padding: 10px 20px;
-}
-
-.nav-links li {
-    display: inline;
-    padding: 0 15px;
-}
-
-.nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.nav-links a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #000; 
-    transition: color 0.3s ease;
-}
-
-.nav-links a.active {
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    color: #555; 
-}
-
-.nav-toggle {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: none;
-    border: none;
-    color: #333; 
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.nav-toggle .fas {
-    display: block;
-}
-
-.nav-links.active {
-    display: block; 
-}
-
-/* The side panel style */
-.sidepanel {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-/* The side panel links */
-.sidepanel a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-/* The close button */
-.closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* Style the button that opens the sidepanel */
-.openbtn {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    }
-
-
-.openbtn:hover {
-    background-color: #444;
-}
-  
-
-/* smaller screens */
-@media (max-width: 480px) {
-    .openbtn {
-        display: block;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none; 
-    }
-}
 
 /*------------BODY MENU PAGE STARTS HERE------------*/
 
 
 
 /*------------create enviroment for menu container------------*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
 
 .menu-container{
     position: relative;
