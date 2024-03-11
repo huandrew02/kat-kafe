@@ -158,11 +158,13 @@ header {
     background-size: cover;
 
 }
-.hero-text {
-  text-align: center;
-  color: white; /* change color if needed */
-  transform: translateY(170px);
-  text-transform:uppercase;
+#hero-text {
+    font-size:x-large;
+    font-family: bold;
+    text-align: center;
+    color: white; /* change color if needed */
+    transform: translateY(170px);
+    text-transform:uppercase;
 }
 
 /* Information Section Styles */
