@@ -133,3 +133,12 @@ header {
     }
 }
 
+.img_cat1 {
+    float: left;
+    padding: 75px 50px 75px 150px;
+}
+
+.our-mission {
+    padding: 50px 150px 75px 50px;
+}
+
