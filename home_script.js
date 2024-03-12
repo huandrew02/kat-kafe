@@ -24,8 +24,21 @@ function removeActiveClasses() {
 }
 // TODO: make the newsletter work
 
-document.getElementById('subscribeButton').addEventListener('click', function(event) {
-  var audio = document.getElementById('subscribeAudio');
-  audio.play();
-  // You can add further actions here if needed
+document.addEventListener('DOMContentLoaded', function() {
+  var subscribeButton = document.getElementById('subscribeButton');
+  var subscribeAudio = document.getElementById('subscribeAudio');
+
+  subscribeButton.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Try to play the audio
+      subscribeAudio.play().then(() => {
+          console.log('Audio played successfully');
+      }).catch(error => {
+          console.error('Error playing the audio:', error);
+          // Handle browsers that block autoplay here
+          // For example, you could show a message to the user asking them to manually play the audio
+      });
+      subscribeForm.reset();
+  });
 });
