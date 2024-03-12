@@ -11,12 +11,12 @@ body{
 /*image position*/
 .img_cat1 {
     float: left;
-    padding: 80px 50px 80px 150px;
+    padding: 75px 50px 25px 150px;
 }
 /*set up tesxt display*/
 .our-mission {
     color: var(--orange-brown);
-    padding: 50px 150px 75px 50px;
+    padding: 50px 150px 25px 50px;
 }
 .our-mission h1{
     color: var(--white-smoke);
@@ -27,4 +27,26 @@ body{
     text-indent: .5em;
     font-family: 'Open Sans';
 }
+
+.img_cat2 {
+    float: right;
+    padding: 150px 150px 75px 50px;
+}
+
+.our-impact {
+    padding: 0 100px 25px 150px;
+}
+
+main {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.our-history {
+    padding: 0 100px 75px 150px;
+}
+
+
 

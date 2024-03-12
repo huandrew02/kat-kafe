@@ -38,3 +38,63 @@
 }
 .contant_box_404{margin-top:-50px;}
 
+
+
+body{
+background-color: #eeab4f;
+color: white;
+font-size: 26px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+
+}
+.info{
+    font-size: 2px;
+}
+
+.donateCat{
+    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+#pngCat{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.counter-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 50px;
+    text-align: center;
+
+}
+
+.counter{
+    font-size: 60px;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+@media(max-width: 580px){
+    body{
+        flex-direction: column;
+    }
+}
