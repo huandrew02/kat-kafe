@@ -21,7 +21,7 @@ const itemType = itemTypeTab.querySelectorAll('div')
 
 let activeSlideIndex = 0;
 
-itemType[activeSlideIndex].style.color = `black`;
+itemType[activeSlideIndex].style.color = `#f5f5f5ff`;
 itemType[activeSlideIndex].getElementsByTagName('h2')[0].style.fontSize = `2em`
 
 upButton.addEventListener('click', ()=> changeMenuList('up'))
@@ -29,7 +29,7 @@ downButton.addEventListener('click', ()=> changeMenuList('down'))
 
 const changeMenuList = (direction) =>{
   const containerHeight = menuContainer.clientHeight
-  itemType[activeSlideIndex].style.color = `gray`;
+  itemType[activeSlideIndex].style.color = `#f9c67f`;
   itemType[activeSlideIndex].getElementsByTagName('h2')[0].style.fontSize = `1.5em`
   if (direction==='down'){
     activeSlideIndex++;
@@ -46,7 +46,7 @@ const changeMenuList = (direction) =>{
     
     console.log(itemType)
   }
-  itemType[activeSlideIndex].style.color = `black`;
+  itemType[activeSlideIndex].style.color = `#f5f5f5ff`;
   itemType[activeSlideIndex].getElementsByTagName('h2')[0].style.fontSize = `2em`
   menuList.style.transform = `translateY(-${activeSlideIndex*containerHeight}px)`
 

@@ -2,28 +2,33 @@
 /****************************************************************************
 START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
 ****************************************************************************/
+main {
+    background-color: var(--orange-brown);
+}
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero.jpg");
-  
+    
     /* Set a specific height */
     height: 60vh;
-  
+    display: flex;
+    align-items: center; justify-content: center; 
     /* Position and center the image to scale nicely on all screens */
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 .hero-text {
-  text-align: center;
-  color: white; /* change color if needed */
-  transform: translateY(170px);
+    font-size: 1.25em;
+    text-align: center;
+    justify-content: center;
+    color: white; /* change color if needed */
 }
 
 
 .call-to-action {
     display: flex;
-    background: #D3D3D3; /* change color if needed */
+    background: var(--warm-yellow); /* change color if needed */
     padding: 30px;
     position: relative;
     overflow: hidden;
@@ -43,6 +48,7 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
 /*---------------------CTA Containter + hover feature ----------*/
 
 .container-cta-text{
+    height: 15vh;
     position: relative;
     width:80%;
     transition: width 1s;
@@ -68,13 +74,11 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
 /*Overall same cta-text-structure*/
 .cta-text-1, .cta-text-2 {
     /* change colors if needed */
-    background-color: #A9A9A9;
-    color: white; 
+    background-color: var(--earth-yellow);
+    color: var(--white-smoke);
+    text-shadow: 1px 1px 2px var(--orange-brown);
 
     padding: 20px 60px;
-    margin-left: auto;
-
-    
     position: absolute;
     top: 50%;
 
@@ -83,12 +87,12 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
     max-width: 70%;
 
     /*VERTICAL-CENTER THE TEXT IN DIV*/
-    height: 15vh;
+    height: 20vh;
     vertical-align: middle;
     line-height: 15vh;
     /*Text size and such*/
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 /*CTA Text end*/
 /*------------------------change a-----------------------*/
@@ -103,11 +107,13 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
 
 /*TODO : prob fix so image isnt so big when full screen*/
 .container {
+    background-color: var(--orange-brown);
     display: flex;
     width: 90vw;
 }
 
 .panel {
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -122,6 +128,7 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
 }
 
 .panel h3 {
+    
     font-size: 24px;
     position: absolute;
     bottom: 20px;
@@ -131,6 +138,7 @@ START NEW CSS HERE: STUFF ON TOP ARE MOSTLY FOR NAV BAR
 }
 
 .panel.active {
+    
     flex: 5;
 }
 
