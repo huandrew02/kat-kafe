@@ -148,3 +148,26 @@ function populateTimes() {
     }
   };
 }
+
+//Udemy example
+const textEl = document.getElementById("hero-text")
+const text = 'We are Open. Come Visit Us!'
+let idx = 1
+let speed = 300 / 2
+
+writeText()
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+//https://www.sitepoint.com/delay-sleep-pause-wait/
+function writeText(){
+  textEl.innerText = text.slice(0, idx)
+  idx++
+
+  if(idx > text.length) {
+    sleep(1000).then(() => idx = 1)
+  }
+
+  setTimeout(writeText, speed)
+}
