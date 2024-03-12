@@ -9,8 +9,6 @@ function closeNav() {
 /*
   THIS SECTION HANDLE THE UP AND DOWN BUTTONS OF THE MENU
 */
-
-
 const menuContainer = document.querySelector('.menu-container')
 const itemTypeTab = document.querySelector('.item-type-tab')
 const menuList = document.querySelector('.menulist')
