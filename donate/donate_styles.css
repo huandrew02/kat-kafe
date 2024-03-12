@@ -58,7 +58,7 @@ main{
 .content{
     justify-content: center;
     font-family: 'Open Sans';
-    padding: 50px 150px 25px 50px;
+    padding: 5% 7% 0% 7%;
 }
 .content h1, .content h2{
     font-family: 'Ojuju';
