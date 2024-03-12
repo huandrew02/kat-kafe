@@ -1,29 +1,33 @@
 /*Organize image and text fields*/
 main{
+    color: var(--orange-brown);
     background-color: var(--warm-yellow);
     display: flex;
+    flex-direction: column;
+
 }
 body{
     background-color: var(--warm-yellow);
 }
 
 
+
 /*image position*/
 .img_cat1 {
     float: left;
-    padding: 75px 50px 25px 150px;
+    padding: 75px 50px 75px 150px;
 }
 /*set up tesxt display*/
 .our-mission {
-    color: var(--orange-brown);
+
     padding: 50px 150px 25px 50px;
 }
-.our-mission h1{
+.entire-mission h1, .entire-impact h1, .entire-history h1{
     color: var(--white-smoke);
     text-shadow: 1px 1px 2px var(--orange-brown);
 }
-.our-mission p {
-    color: var(--orange-brown);
+.our-mission p, .our-impact p, .our-history p {
+
     text-indent: .5em;
     font-family: 'Open Sans';
 }

@@ -38,7 +38,39 @@
 }
 .contant_box_404{margin-top:-50px;}
 
+span {
+    font-size: 1em;
+    font-family: 'Ojuju';
+}
 
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.center-image{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    justify-content: center;
+    font-family: 'Open Sans';
+    padding: 50px 150px 25px 50px;
+}
+.content h1, .content h2{
+    font-family: 'Ojuju';
+    text-shadow: 1px 1px 2px var(--orange-brown);
+    font-size: 1.75em;
+}
+.content p {
+  font-size: .75em;
+  text-align: justify;
+  color: var(--orange-brown);
+  text-indent: .5em;
+}
 
 body{
 background-color: #eeab4f;
@@ -46,10 +78,11 @@ color: white;
 font-size: 26px;
 }
 
-h1{
+.title{
     text-align: center;
     text-decoration: underline;
     font-weight: bolder;
+    font-size: 2em;
 }
 
 h2{
@@ -57,27 +90,20 @@ h2{
     text-decoration: underline;
 
 }
-.info{
-    font-size: 2px;
-}
-
 .donateCat{
     float: left;
     display: block;
     margin-left: auto;
     margin-right: auto;
-   
+    padding: 20px;
 }
 #pngCat{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .counter-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 30px 50px;
     text-align: center;
 
@@ -88,13 +114,19 @@ h2{
     margin-top: 10px;
 
 }
+.col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-
-
-
+.space-below{
+    padding:30px;
+}
 
 @media(max-width: 580px){
     body{
         flex-direction: column;
     }
 }
+
